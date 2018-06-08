@@ -4,7 +4,7 @@
   "author": "F5 Team",
   "repository": {
     "type": "git",
-    "url": "https://github.com/redwon/wordpress-starter-theme.git"
+    "url": "https://bitbucket.org/f5-team/starter-wp-theme.git"
   },
   "devDependencies": {
     "autoprefixer": "^7.0.1",
