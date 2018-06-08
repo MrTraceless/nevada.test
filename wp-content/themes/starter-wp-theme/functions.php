@@ -86,10 +86,6 @@ function theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
-/**
- * Clear WP HEAD
- */
-require get_template_directory() . '/include/clear-wp-head.php';
 
 /**
  * Customizer additions.
