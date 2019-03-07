@@ -13,4 +13,6 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'main-nav__list', 'container' => false ) ); ?>
 		</nav>
 
+		<div class="banner">
+		</div>
 	</header>

@@ -1,0 +1,131 @@
+.main__title--public {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.publications {
+
+    &__img {
+        padding-top: 29px;
+        padding-bottom: 36px;
+
+        @include max-w (992px) {
+            background-size: cover;
+            width: 400px;
+            height: 100%;
+            min-height: 200px;
+        }
+
+        @include max-w (768px) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    &-column {
+        width: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        @include max-w (992px) {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &-container {
+        position: relative;
+        border-top: 2px solid $text-color2;
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 50px;
+
+        @include max-w (992px) {
+            padding: 25px 15px;
+            justify-content: center;
+        }
+
+        @include max-w (768px) {
+            padding: 15px 0;
+        }
+    
+        &::after {
+            position: absolute;
+            content: '';
+            width: 98%;
+            margin: auto;
+            height: 1px;
+            left: 0;
+            right: 0;
+            background: $text-color2;
+            top: 3px;
+        }
+    
+        &__btn {
+            border: none;
+            margin-top: 30px;
+            align-self: flex-end;
+
+            @include max-w (769px) {
+                margin-top: 10px;
+            }
+        }
+    }
+    &-text-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        &__date {
+            align-self: flex-start;
+            color: $text-color2;
+            font-family: $font-family--garamond;
+            // font-size: $font-size;
+            @include fluid-font (14px, 16px, 320px, 2560px) ;
+            font-weight: $font-weight;
+            text-transform: uppercase;
+            line-height: $line-height__text;
+            padding-top: 31px;
+            padding-left: 26px;
+            margin: 0;
+
+            @include max-w (992px) {
+                align-self: center;
+            }
+        }
+    
+        &__title {
+            line-height: 32px;
+            width: 90%;
+
+            @include max-w (992px) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    
+        &__text {
+            color: $text-color2;
+            font-family: $font-family--garamond;
+            // font-size: $font-size2;
+            @include fluid-font (14px, 20px, 320px, 2560px) ;
+            font-weight: $font-weight;
+            line-height: $line-height__text;
+            margin: 0;
+            padding-top: 32px;
+            width: 90%;
+
+            @include max-w (992px) {
+                width: 100%;
+                padding-top: 16px;
+            }
+
+            @include max-w (768px) {
+                padding-top: 0;
+            }
+        }
+    }
+    
+}
