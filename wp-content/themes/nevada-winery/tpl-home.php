@@ -33,8 +33,10 @@
 		echo $text;
 	?>
 </p>
+	</section>
 
-<div class="gallery-wrapper">
+	<section class="image-block">
+	<div class="gallery-wrapper">
 <?php 
 $images = get_field('our_wines_gallery');
 
@@ -50,6 +52,23 @@ if( $images ): ?>
         <?php endforeach; ?>
     </ul>
 <?php endif; ?>
+</div>
+	</section>
+
+	<section class="subscribe">
+	<div class="email-container">
+
+<div class="container__outer">
+	<!--Hover crashed-->
+		<form class="form">
+			<input type="email" placeholder="Enter your e-mail" class="form__input">
+			<button type="button" class="button">
+					subscribe <span class="button__arrow"><i class="fas fa-chevron-right"></i></span>
+			</button>
+
+		</form>
+
+</div>
 </div>
 	</section>
 

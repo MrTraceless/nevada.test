@@ -1,4 +1,4 @@
-	<footer class="footer" role="contentinfo">
+	<footer class="footer page-container" role="contentinfo">
 
 		<!-- <div class="page-footer__inner">
 			<p class="copyright">&copy; <?php echo date("Y"); ?> All rights reserved.</p>
