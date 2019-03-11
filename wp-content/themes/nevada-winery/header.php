@@ -4,15 +4,16 @@
 	<?php get_template_part( 'template-parts/head' ); ?>
 </head>
 
+
 <body <?php body_class("page-body"); ?>>
 
-	<header class="page-header">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+	<header class=" header" style="background-image: url('<?php header_image(); ?>');">
+		<!-- <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> -->
 
 		<nav class="main-nav" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'main-nav__list', 'container' => false ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'menu-1',
+			 'menu_class' => 'main-nav__list',
+			  'container' => false
+			   ) ); ?>
 		</nav>
-
-		<div class="banner">
-		</div>
 	</header>

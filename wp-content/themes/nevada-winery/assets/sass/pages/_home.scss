@@ -1,0 +1,41 @@
+.ourStory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
+    @include max-w (992px) {
+        padding-top: 50px;
+    }
+
+    &__text {
+        width: 65%;
+        font-family: $font-family__text;
+        color: $text-color2;
+      //   font-size: $font-size2;
+        @include fluid-font (14px, 20px, 320px, 2560px);
+        font-weight: 400;
+        line-height: $line-height__text;
+        text-align: center;
+        margin: 0;
+
+    @include max-w (1200px) {
+          width: 80%;
+  }
+
+    @include max-w (768px) {
+          width: 100%;
+      }
+    }
+}
+
+.gallery-wrapper {
+    padding-top: 60px;
+    width: 100%;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}

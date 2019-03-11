@@ -1,15 +1,24 @@
+.header {
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  font-display: column;
+}
+
 .page-header {
   position: relative;
   background-color: #000;
 }
 
 
-ul {
+.main-nav__list {
   display: flex;
   justify-content: center;
 }
 
-li {
+.main-nav__list li {
   list-style-type: none;
   padding-left: 25px;
   padding-right: 25px;
@@ -17,18 +26,23 @@ li {
 }
 
 
-a {
+.main-nav__list li a {
   color: $links-color;
   font-family: $font-family;
    font-size: $font-size2;
   font-weight: 400;
   text-transform: uppercase;
   padding: 5px;
+
+  &:hover {
+    border-bottom: 2px solid $links-color;
+  }
+
 }
 
 .banner {
   top: 0;
-  position: absolute; 
+  position: relative;
   width: 100%;
   max-height: 772px;
   height: 100vh;
