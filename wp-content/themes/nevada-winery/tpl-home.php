@@ -72,6 +72,28 @@ if( $images ): ?>
 </div>
 	</section>
 
+	<section class="meetUs" style="background-image: url( <?php echo get_field ('meet_us_banner') ?>);">
+	<?php
+	$meet_us_title = get_field("meet_us_title");
+	$meet_us_text = get_field("meet_us_text"); ?>
+
+	<div class="meetUs-container">
+
+	<div class="meetUs-block">
+	<h2  class="meetUs-block__title"> <?php
+	echo $meet_us_title ?></h2>
+
+	<p class="meetUs-block__text">
+	<?php
+		echo $meet_us_text;
+	?>
+</p>
+
+</div>
+
+</div>
+</section>
+<?php get_template_part('template-parts/content', 'contactUs'); ?>
 	</main>
 
 <?php get_footer(); ?>

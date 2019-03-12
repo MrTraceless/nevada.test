@@ -131,3 +131,59 @@
         margin-bottom: 5px;
         }
     }
+
+
+    .meetUs {
+      padding-top: 0;
+      width: 100%;
+      height: 430px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-container {
+          margin-left: auto;
+          margin-right: auto;
+          padding: 10px;
+          background-color: $body-bg;
+      }
+
+      &-block {
+          width: 100%;
+          height: 100%;
+          max-width: 372px;
+          max-height: 215px;
+          padding-bottom: 51px;
+          border: 2px solid $border-color;
+          background-color: $body-bg;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+
+          &__title {
+              margin: 0;
+            //   font-size: $font-size2;
+            @include fluid-font (16px, 20px, 320px, 2560px);
+              text-transform: uppercase;
+              text-align: center;
+              padding-top: 32px;
+              padding-bottom: 41px;
+      }
+
+          &__text {
+              color: $text-color2;
+              margin: 0;
+              text-align: center;
+              width: 85%;
+            //   font-size: $font-size2;
+            @include fluid-font (14px, 20px, 320px, 2560px);
+              font-family: "Garamond Premr Pro";
+              font-style: italic;
+              line-height: $line-height__text;
+              }
+            }
+  }

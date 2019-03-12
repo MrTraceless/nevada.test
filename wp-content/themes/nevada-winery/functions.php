@@ -83,6 +83,7 @@ function theme_scripts() {
 	wp_enqueue_style( 'theme-custom-style', get_template_directory_uri() . '/assets/css/custom.css' );
   // Scripts
 	wp_enqueue_script( 'theme-script', get_template_directory_uri() . '/assets/scripts/main.js', array('jquery'), false, true );
+	wp_enqueue_script( 'font-awesome-script', get_template_directory_uri() . '/assets/scripts/all.min.js', array('jquery'), false, true );
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
