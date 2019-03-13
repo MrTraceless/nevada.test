@@ -5,18 +5,7 @@
 ?>
 
 <?php get_header(); ?>
-<div class="banner" style="background-image: url( <?php echo get_field ('home_banner') ?>);">
-<div class="banner-wrapper">
-	<div class="banner__container page-container">
-		<div class="banner__logo">
-		<a href="<?php home_url(); ?>">
-               <img alt="" src="<?php echo get_field('main-logo'); ?>">
-            </a>
-            </div>
-		</div>
-	</div>
-</div>
-</div>
+<?php get_template_part('template-parts/content', 'banner'); ?>
 
 	<main id="main" class="page-main page-container" role="main">
 
@@ -28,7 +17,7 @@
 	<h1 class="main__title"> <?php
 	echo $our_story_title 
 	?></h1>
-<p class="ourStory__text	">
+<p class="ourStory__text">
 	<?php
 		echo $text;
 	?>
