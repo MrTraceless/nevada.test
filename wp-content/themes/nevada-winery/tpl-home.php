@@ -62,7 +62,7 @@ if( $images ): ?>
 </div>
 	</section>
 
-	<section class="meetUs" style="background-image: url( <?php echo get_field ('meet_us_banner') ?>);">
+	<section class="meetUs" style="background-image: url( <?php echo get_field ('meet_us_banner'); ?>)">
 	<?php
 	$meet_us_title = get_field("meet_us_title");
 	$meet_us_text = get_field("meet_us_text"); ?>

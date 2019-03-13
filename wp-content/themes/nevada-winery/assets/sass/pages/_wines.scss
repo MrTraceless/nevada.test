@@ -82,7 +82,6 @@
   &__icon {
     width: 40px;
     height: 68px;
-    background-image: url('../../images/small-wine-percent.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -128,7 +127,18 @@
     padding: 0;
   }
 
-  &__text {
+}
+
+.wine-content h2 {
+  color: $text-color;
+  font-family: $font-family--oswald;
+  // font-size: $font-size2;
+  @include fluid-font (16px, 20px, 320px, 2560px) ;
+  font-weight: $font-weight;
+  text-transform: uppercase;
+}
+
+.wine-content p {
     color: $text-color2;
     font-family: $font-family--garamond;
     // font-size: $font-size2;
@@ -139,23 +149,47 @@
     margin-bottom: 20px;
   }
 
-  &-inner-title {
+  .wine-content h3 {
     color: $text-color;
-    font-family: $font-family--garamond;
-    // font-size: 18px;
-    @include fluid-font (14px, 18px, 320px, 2560px) ;
-    line-height: $line-height__text;
-  }
-
-  &-inner-text {
-    color: $text-color2;
-    font-family: $font-family--garamond;
-    // font-size: 18px;
-    @include fluid-font (14px, 18px, 320px, 2560px) ;
+    font-family: $font-family--oswald;
+    font-size: $font-size;
     font-weight: $font-weight;
     font-style: normal;
-    line-height: $line-height__text;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
   }
+
+.wine-content h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $text-color2;
+  font-family: $font-family--garamond;
+  // font-size: 18px;
+  @include fluid-font (14px, 18px, 320px, 2560px) ;
+  font-weight: $font-weight;
+  font-style: normal;
+  line-height: $line-height__text;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  }
+
+.wine-content strong {
+  color: $text-color;
+  font-family: $font-family--garamond;
+  // font-size: 18px;
+  @include fluid-font (14px, 18px, 320px, 2560px) ;
+  line-height: $line-height__text;
+}
+
+
+.wine-content i {
+color: $text-color2;
+font-family: $font-family--garamond;
+// font-size: 18px;
+@include fluid-font (14px, 18px, 320px, 2560px) ;
+font-weight: $font-weight;
+font-style: normal;
+line-height: $line-height__text;
+margin-bottom: 20px;
+margin-top: 15px;
 }
