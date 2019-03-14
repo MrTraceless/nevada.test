@@ -6,9 +6,9 @@
 		</div> -->
 		<div class="footer-container">
 			<a href="<?php home_url(); ?>">
-           		<img alt="" src="<?php echo get_field('footer-logo'); ?>">
+           		<img alt="" src="<?php echo get_field('footer_logo', 'options'); ?>">
         	</a>
-			<p class="footer-container__text">Copyright vadasunsetInteractive <?php echo date("Y"); ?></p>
+			<p class="footer-container__text"><?php echo get_field('footer_text', 'options'); ?> <?php echo date("Y"); ?></p>
 		</div>
 	</footer>
 

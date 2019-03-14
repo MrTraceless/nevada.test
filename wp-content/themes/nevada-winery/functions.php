@@ -83,7 +83,10 @@ function theme_scripts() {
 	wp_enqueue_style( 'theme-custom-style', get_template_directory_uri() . '/assets/css/custom.css' );
   // Scripts
 	wp_enqueue_script( 'theme-script', get_template_directory_uri() . '/assets/scripts/main.js', array('jquery'), false, true );
+	wp_enqueue_script( 'masonry-layout', get_template_directory_uri() . '/assets/scripts/masonry.pkgd.min.js', array('jquery'), false, true );
+	wp_enqueue_script( 'imagesloaded', get_template_directory_uri() . '/assets/scripts/imagesloaded.pkgd.min.js', array('jquery'), false, true );
 	wp_enqueue_script( 'font-awesome-script', get_template_directory_uri() . '/assets/scripts/all.min.js', array('jquery'), false, true );
+	wp_enqueue_script( 'google-map-api', "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcA7L0ohRonCMw-I51it8kE8PzC3MSzV8" );
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
@@ -126,3 +129,26 @@ if( function_exists('acf_add_options_page') ) {
 	// ));
 	
 }
+
+/**
+ * Include Masonry
+ */
+
+function mason_script() {
+	// wp_register_script('masonry', '/path/to/masonry.pkgd.min.js');
+	// верхняя строка не нужна, потому что в WordPress masonry есть в комплекте по умолчанию, поэтому можно просто его подключить.
+	wp_enqueue_script('masonry');
+}
+add_action( 'wp_enqueue_scripts', 'mason_script' );
+
+
+/**
+ * Google Map API
+ */
+
+function my_acf_init() {
+	
+	acf_update_setting('google_api_key', 'AIzaSyCcA7L0ohRonCMw-I51it8kE8PzC3MSzV8');
+}
+
+add_action('acf/init', 'my_acf_init');
