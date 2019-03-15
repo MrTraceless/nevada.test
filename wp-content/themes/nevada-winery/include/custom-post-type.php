@@ -32,4 +32,18 @@ function create_posttype()
       'rewrite' => array('slug' => 'logo'),
       )
   );
+  register_post_type('events',
+  array(
+    'supports' => array('title', 'editor'),
+    'labels' => array(
+      'name' => __('Events'),
+      'singular_name' => __('Events')
+    ),
+    'public' => true,
+    'menu_position' => 4,
+    'menu_icon' => 'dashicons-format-quote',
+    'rewrite' => array('slug' => 'events'),
+    'has_archive' => true,
+    )
+);
 }
