@@ -33,7 +33,16 @@ if( have_rows('media_repeater') ):
                 <div class="publications-text-block">
         <p class="publications-text-block__date"><?php the_sub_field('media_post_date'); ?></p>
         <h2 class="h2-title publications-text-block__title"> <?php the_sub_field('media_post_title'); ?></h2>
-        <img src="<?php the_sub_field('media_post_image'); ?>" alt="" class="publications__img">
+        <?php
+
+            $image = get_sub_field('media_post_image');
+
+
+            if ($image) :?>
+                <img src="<?php echo $image; ?>" alt="" class="publications__img">
+            <?php endif;
+        ?>
+        
 		<p class="publications-text-block__text"> <?php the_sub_field('media_post_text'); ?></p>
         </div>
         <!-- Link Repeater -->

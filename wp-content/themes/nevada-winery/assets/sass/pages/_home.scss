@@ -187,3 +187,40 @@
               }
             }
   }
+
+
+// CF7 STYLE
+.subscribe-form  {
+  .wpcf7-form {
+    display: flex;
+    position: relative;
+  
+    &::after {
+      position: absolute;
+      content: '';
+      width: 98%;
+      height: 1px;
+      left: 0;
+      right: 0;
+      bottom: 3px;
+      background: $text-color2;
+      margin: auto;
+      }
+  
+  &::before {
+      position: absolute;
+      content: '';
+      width: 98%;
+      margin: auto;
+      height: 1px;
+      left: 0;
+      right: 0;
+      background: $text-color2;
+      top: 3px;
+      }
+  
+      &-control-wrap {
+        width: 100%;
+      }
+  }
+}

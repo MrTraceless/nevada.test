@@ -56,7 +56,9 @@ if( $images ): ?>
 			</button>
 
 		</form> -->
+		<div class='subscribe-form'>	
 		<?php  echo do_shortcode('[contact-form-7 id="118" title="winery-email"]'); ?>
+		</div>
 
 </div>
 </div>

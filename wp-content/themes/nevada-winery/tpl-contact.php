@@ -94,17 +94,9 @@
                         <div class="contact-form">
 
                             <h2 class="h2__title contact-form--h2__title">get in touch</h2>
-
-                            <form>
-
-                                <input type="text" placeholder="Enter your Name" class="form-input">
-                                <input type="email" placeholder="Enter your E-mail" class="form-input">
-                                <input type="text" placeholder="Enter your Subject" class="form-input">
-                                <textarea placeholder="Message" class=" form-textarea"></textarea>
-                                <button type="button" class="button form--button">send <span class="button__arrow form--arrow"><i class="fas fa-chevron-right"></i></span></button>
-
-                            </form>
-
+                            <div class="contact-form"> 
+                                <?php echo do_shortcode('[contact-form-7 id="250" title="Contact Page Form"]'); ?>
+                                </div>
                         </div>
 
                     </div>

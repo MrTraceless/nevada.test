@@ -1,4 +1,11 @@
-<div class="banner" style="background-image: url( <?php echo get_field ('banner_image_url') ?>);">
+<?php $banner_img = get_field ('banner_image_url');
+
+?>
+<div class="banner <?php
+	if (!is_page('home')) {
+		echo 'banner-sample';
+	}
+?>" style="background-image: url( <?php echo $banner_img ?>);">
 <div class="banner-wrapper">
 	<div class="banner__container page-container">
 		<div class="banner__logo">
