@@ -1,24 +1,49 @@
 <?php get_header(); ?>
 <?php get_template_part('template-parts/content', 'banner'); ?>
 
-	<main id="main" class="page-main" role="main">
+<main id="main" class="page-main page-container" role="main">
 
-		<?php if ( have_posts() ) : ?>
+	<section class="events">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+		<div class="events-container">
+            <div class="outer-container">
 
-				<?php get_template_part( 'template-parts/content', 'events'); ?>
+                <div class="event-column">
 
-			<?php endwhile; ?>
+	<?php if ( have_posts() ) : ?>
 
-			<?php the_posts_navigation(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php else : ?>
+	<?php get_template_part( 'template-parts/content', 'events'); ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+<?php endwhile; ?>
 
-		<?php endif; ?>
 
-	</main>
+<?php else : ?>
+
+<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+<?php endif; ?>
+				</div>
+
+			</div>
+
+			<div class="calendar-column">
+        <div class="calendar-container">
+            <div class="calendar-block">
+			<?php if ( is_active_sidebar( 'sidebar-1' ) ) {
+  			dynamic_sidebar( 'sidebar-1' );
+			}
+			?>
+            </div>
+        </div>
+    </div>
+			
+		</div>
+		<?php get_template_part('template-parts/content', 'contactUs'); ?>
+
+	</section>
+
+</main>
 
 <?php get_footer(); ?>

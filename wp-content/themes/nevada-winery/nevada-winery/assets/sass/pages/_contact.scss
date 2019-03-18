@@ -1,0 +1,274 @@
+.contact-us {
+    display: flex;
+    justify-content: center;
+
+    @include max-w (992px) {
+      padding-top: 50px;
+    }
+
+    &-text-block {
+        width: 66%;
+
+        @include max-w (992px) {
+          width: 80%;
+        }
+
+        @include max-w (768px) {
+          width: 100%;
+        }
+    }
+
+    &__text {
+        color: $text-color2;
+        font-family: $font-family--garamond;
+        // font-size: $font-size2;
+        @include fluid-font (14px, 20px, 320px, 2560px) ;
+        font-weight: $font-weight;
+        line-height: $line-height__text;
+        font-style: normal;
+        text-align: center;
+        margin: 0;
+    }
+
+    &--main__title {
+        text-align: center;
+    }
+}
+
+.map-section {
+
+  @include max-w (992px) {
+    padding-top: 50px;
+  }
+}
+.map {
+  display: block;
+    width: 100%;
+    height: 430px;
+
+    &-container {
+      position: relative;
+
+      @include max-w (992px) {
+        padding-top: 50px;
+      }
+
+    }
+
+    &-board {
+      width: 100%;
+      max-width: 250px;
+      position: absolute;
+      top: 21%;
+      bottom: auto;
+      left: 55%;
+      right: auto;
+      z-index: 99;
+      display: inline-block;
+
+      @include max-w (768px) {
+        position: relative;
+        min-width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-top: 20px;
+      }
+
+        &-container {
+          background-color: #FFF;
+          padding: 7px;
+        }
+
+        &-block {
+          padding-top: 31px;
+          padding-bottom: 31px;
+          border: 2px solid $border-color;
+          background-color: $body-bg;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &__title {
+            margin: 0;
+            //   font-size: $font-size2;
+            @include fluid-font (14px, 16px, 320px, 2560px);
+              text-transform: uppercase;
+              text-align: center;
+              padding-bottom: 16px;
+          }
+      }
+}
+}
+
+.worker-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.worker-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 31px;
+  padding-left: 31px;
+
+  &__day {
+    color: $text-color;
+    font-family: $font-family--garamond;
+    font-size: $font-size;
+    font-weight: $font-weight;
+  }
+
+  &__time {
+    color: $text-color3;
+    font-family: $font-family--garamond;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    text-transform: uppercase;
+  }
+}
+.contact {
+
+  @include max-w (992px) {
+    padding-top: 50px;
+  }
+    &__bg {
+        height: 730px;
+        background-image: url('../../images/contact-img1.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include max-w (768px) {
+          height: 541px;
+        }
+    }
+}
+
+.form-outer-block {
+    padding: 15px;
+    background-color: $body-bg;
+    max-width: 514px;
+    width: 100%;
+
+    @include max-w (542px) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+}
+
+.form-inner-block {
+    width: 100%;
+    max-width: 484px;
+    background-position: center;
+    background-size: cover;
+    background-color: $body-bg;
+    border: 2px solid $border-color;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form {
+    padding: 32px;
+
+    @include max-w (768px) {
+      padding: 20px 25px;
+    }
+
+    &--h2__title {
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 30px;
+        // font-size: $font-size2;
+        @include fluid-font (14px, 18px, 320px, 2560px) ;
+        font-weight: $font-weight;
+
+        @include  max-w (768px) {
+          padding-bottom: 20px;
+        }
+    }
+}
+
+.form--button {
+    border: none;
+    text-transform: uppercase;
+    padding-top: 29px;
+    padding-left: 82%;
+
+    @include max-w (768px) {
+      padding-top: 25px;
+    }
+
+    @include max-w (384px) {
+      padding-left: 75%;
+    }
+}
+
+.form--arrow {
+  padding-left: 37px;
+}
+
+.form-input {
+    border: none;
+    border-bottom: 1px solid $border-input;
+    width: 420px;
+    height: 53px;
+    margin-top: 0;
+    margin-bottom: 32px;
+    color: $text-color4;
+    font-family: $font-family--garamond;
+    @include fluid-font (14px, 20px, 320px, 2560px) ;
+
+    @include max-w (768px) {
+      height: 46px;
+      margin-bottom: 20px;
+    }
+
+    &:focus {
+        border-bottom: 1px solid $text-color;
+        transition: 0.5s;
+    }
+
+    &:focus::placeholder {
+        font-size: 13px;
+        transform: translateY(-20px);
+        transition: 0.5s;
+    }
+
+  }
+
+.form-textarea {
+    color: $text-color4;
+    border: none;
+    border-bottom: 1px solid $border-input;
+    resize: none;
+    width: 420px;
+    height: 132px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: $font-family--garamond;
+
+    @include max-w (768px) {
+      height: 120px;
+      padding-bottom: 0;
+    }
+
+    &:focus {
+        border-bottom: 1px solid $text-color;
+        transition: 0.5s;
+    }
+
+    &:focus::placeholder {
+        font-size: 13px;
+        transform: translateY(-20px);
+        transition: 0.5s;
+    }
+}
+
+
+//Map

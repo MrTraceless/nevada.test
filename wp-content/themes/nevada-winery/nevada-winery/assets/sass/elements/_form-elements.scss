@@ -1,0 +1,16 @@
+// All elements Form
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+input[type='search'],
+input[type='password'],
+textarea,
+select {
+  width: 100%;
+  max-width: 100%;
+  background: none;
+  outline: 0 none;
+  padding: 15px;
+  background-color: #fff;
+}
