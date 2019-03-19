@@ -59,6 +59,7 @@ display: flex;
     }
 
     &-block2 {
+        width: 100%;
 
         &__text {
             @include fluid-font (16px, 20px, 320px, 2560px) ;
@@ -88,33 +89,42 @@ display: flex;
             }
         }
 
-        &__link {
-            border: none;
-            float: right;
-            padding-top: 20px;
+    }
+}
 
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    @include max-w (992px) {
+        justify-content: space-between;
+    }
+
+    &__link {
+        border: none;
+        text-align: right;
+        padding-top: 20px;
+
+    }
+    &__calendar {
+        padding-top: 20px;
+        color: $text-color;
+        font-size: 15px;
+        font-family: $font-family;
+        background-color: transparent;
+        border: none;
+        line-height: 15px;
+        text-transform: uppercase;
+        display: none;
+
+        @include max-w (992px) {
+            display: inline-block;
         }
 
-        &__calendar {
-            padding-top: 15px;
-            color: $text-color;
-            font-size: 15px;
-            font-family: $font-family;
-            background-color: transparent;
-            border: none;
-            line-height: 15px;
-            text-transform: uppercase;
-            display: none;
-
-            @include max-w (992px) {
-                display: inline-block;
-            }
-
-            &-icon {
-                margin-right: 10px;
-            }
-
+        &-icon {
+            margin-right: 10px;
         }
+
     }
 }
 
@@ -155,15 +165,3 @@ display: flex;
         padding-left: 0;
     }
 }
-
-
-.paragraph {
-    color: $text-color2;
-    font-family: $font-family--garamond;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: $font-weight;
-    line-height: $line-height__text;
-    margin: 0;
-    padding-right: 20px;
-  }

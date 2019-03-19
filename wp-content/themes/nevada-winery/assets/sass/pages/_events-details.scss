@@ -21,7 +21,8 @@ display: flex;
 
 .event-details {
     border-top: 1px solid $text-color2;
-    display: flex;
+    // display: flex;
+    // flex-direction: column;
     padding-top: 30px;
     padding-bottom: 50px;
 
@@ -30,7 +31,7 @@ display: flex;
     }
 
     &-block1 {
-        float: left;
+        // float: left;
         padding-right: 20px;
 
         @include max-w (768px) {
@@ -38,6 +39,8 @@ display: flex;
         }
 
         &__item {
+            margin-right: 20px;
+            float: left;
             margin-top: 7px;
             width: 75px;
             height: 75px;
@@ -95,4 +98,46 @@ display: flex;
     @include max-w (992px) {
         padding-right: 0;
     }
+}
+
+
+//The Content Style
+
+.event-details p {
+    color: $text-color2;
+    font-family: $font-family--garamond;
+    @include fluid-font (16px, 20px, 320px, 2560px) ;
+    font-style: normal;
+    font-weight: $font-weight;
+    line-height: $line-height__text;
+    margin: 0;
+    padding-right: 20px;
+
+    @include max-w (992px) {
+        padding-right: 0;
+    }
+}
+
+.event-details h4 {
+    text-align: center;
+    color: $text-color2;
+    font-family: $font-family--oswald;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: italic;
+    line-height: $line-height__text;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.event-details img {
+    padding-top: 30px;
+}
+
+
+// Style Calendar
+.widget_archives_calendar {
+    width: 290px;
+    height: 376px;
+    padding-top: 0;
 }

@@ -12,7 +12,9 @@ $banner_img2 = get_field ('banner_image_url', 'option');
 		echo 'banner-sample';
 	}
 ?>" style="background-image: url( <?php if (is_archive()){
-	echo $banner_img2; }else {
+	echo $banner_img2; } elseif (is_single()){
+		echo $banner_img;
+	} else {
 		echo $banner_img;
 	} ?>);">
 <div class="banner-wrapper">

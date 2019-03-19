@@ -85,6 +85,17 @@ li {
   text-transform: uppercase;
 }
 
+.paragraph {
+  color: $text-color2;
+  font-family: $font-family--garamond;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: $font-weight;
+  line-height: $line-height__text;
+  margin: 0;
+  padding-right: 20px;
+}
+
 .def-paragraph {
   color: $text-color2;
   font-family: $font-family--garamond;
