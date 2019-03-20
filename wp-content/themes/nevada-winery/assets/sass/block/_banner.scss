@@ -21,10 +21,11 @@
   }
 
   &-wrapper {
-    padding-top: 60px;
+    margin-top: 60px;
+    z-index: 50;
 
     @include max-w (992px) {
-      padding-top: 0;
+      margin-top: 0;
     }
   }
 
@@ -60,8 +61,25 @@
     height: 100%;
   }
   &-sample {
+    position: relative;
     max-height: 372px;
     background-size: cover;
     background-position: center;
+
+    @include max-w (768px){
+      max-height: 200px;
+    }
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $text-color;
+      opacity: .6;
+    }
   }
 }

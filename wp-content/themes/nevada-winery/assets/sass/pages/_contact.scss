@@ -192,6 +192,31 @@
           padding-bottom: 20px;
         }
     }
+
+    span.ajax-loader {
+      display: none!important;
+    }
+    
+    span.wpcf7-not-valid-tip {
+      position: absolute;
+      font-family: $font-family--garamond;
+      right: 0;
+      z-index: 20;
+      top: 45px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+    
+    
+    .wpcf7-validation-errors {
+      display: none!important;
+    }
+    
+    .wpcf7-mail-sent-ok {
+      margin: 10px!important;
+      border: none;
+      color: $successful;
+    }
 }
 
 .form--button {

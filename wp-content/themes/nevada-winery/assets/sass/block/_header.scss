@@ -5,6 +5,7 @@
   z-index: 1;
   display: flex;
   font-display: column;
+  z-index: 120;
 
   @include max-w (992px) {
     width: 100%;

@@ -50,6 +50,13 @@ $('.menu').on('click', function (a) {
   $('.main-nav__list').toggleClass('menu-right');
 });
 
+
+//Error Subscribe
+
+    $(".wpcf7").on('wpcf7:invalid', function() {
+      $('.container__outer').css('border-color', 'red');
+  });
+
 })(jQuery);
 
 

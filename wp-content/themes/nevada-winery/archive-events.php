@@ -34,14 +34,19 @@
 
 		</div>
 
-	<div class="calendar-column">
+<div class="calendar-column">
+
 	<div class="calendar-container">
+
+            <div class="calendar-block">
 			<?php if ( is_active_sidebar( 'sidebar-1' ) ) {
   				dynamic_sidebar( 'sidebar-1' );
 				} ?>
-		</div>
 
-    	</div>
+			</div>
+	</div>
+
+</div>
     </div>
 
 	<?php get_template_part('template-parts/content', 'contactUs'); ?>

@@ -1,15 +1,12 @@
 <?php get_header(); ?>
+<?php get_template_part('template-parts/content', 'banner'); ?>
 
 	<main id="main" class="page-main" role="main">
 
 		<section class="error-404 not-found">
 
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'theme' ); ?></h1>
-			</header>
-
-			<div class="page-content">
-				<?php get_search_form(); ?>
+			<div>
+				<h1 class="main__title no-found-page"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.'); ?></h1>
 			</div>
 
 		</section>

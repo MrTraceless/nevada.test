@@ -143,6 +143,7 @@
         }
 
     &__input {
+        position: relative;
         width: 100%;
         max-width: 100%;
         border: none;
@@ -216,6 +217,7 @@
 
 // CF7 STYLE
 .subscribe-form  {
+
   .wpcf7-form {
     display: flex;
     position: relative;
@@ -248,4 +250,33 @@
         width: 100%;
       }
   }
+
+  span.ajax-loader {
+    display: none!important;
+  }
+  
+  span.wpcf7-not-valid-tip {
+    position: absolute;
+    font-family: $font-family--garamond;
+    z-index: 20;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  
+  .wpcf7-validation-errors {
+    display: none!important;
+  }
+  
+  .wpcf7-mail-sent-ok {
+    margin: 10px!important;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: $successful;
+    top: 60px;
+  }
 }
+

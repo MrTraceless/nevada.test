@@ -49,14 +49,7 @@ endif; ?>
 	<div class="email-container">
 
 <div class="container__outer">
-	<!--Hover crashed-->
-		<!-- <form class="form">
-			<input type="email" placeholder="Enter your e-mail" class="form__input">
-			<button type="button" class="button">
-					subscribe <span class="button__arrow"><i class="fas fa-chevron-right"></i></span>
-			</button>
-
-		</form> -->
+	
 		<div class='subscribe-form'>	
 		<?php  echo do_shortcode('[contact-form-7 id="118" title="winery-email"]'); ?>
 		</div>

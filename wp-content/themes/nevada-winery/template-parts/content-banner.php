@@ -3,6 +3,8 @@
 $banner_img = get_field ('banner_image_url');
 
 $banner_img2 = get_field ('banner_image_url', 'option');
+$banner_404 = get_field ('banner_404_url', 'option');
+
 
 
 
@@ -13,7 +15,9 @@ $banner_img2 = get_field ('banner_image_url', 'option');
 	}
 ?>" style="background-image: url( <?php if (is_archive()){
 	echo $banner_img2; } elseif (is_single()){
-		echo $banner_img;
+		echo $banner_img2;
+	}elseif(is_404()) {
+		echo $banner_404;
 	} else {
 		echo $banner_img;
 	} ?>);">

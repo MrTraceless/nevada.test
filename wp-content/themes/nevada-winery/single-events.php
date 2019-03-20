@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<?php get_template_part('template-parts/content', 'banner'); ?>
 <main class="page-main page-container" role="main">
 
     <section class="events">
@@ -21,11 +21,16 @@
 
         <!-- Calendar-->
 		<div class="calendar-column">
+		<div class="calendar-container">
+
+<div class="calendar-block">
 			<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 
 			<?php endif; ?>
+</div>
+</div>
     </div>
 </div>
     </section>
