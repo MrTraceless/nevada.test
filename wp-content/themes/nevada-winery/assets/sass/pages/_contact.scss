@@ -40,6 +40,10 @@
   @include max-w (992px) {
     padding-top: 50px;
   }
+
+  @include max-w (768px) {
+    margin: 0 -15px;
+  }
 }
 .map {
   display: block;
@@ -134,6 +138,12 @@
   @include max-w (992px) {
     padding-top: 50px;
   }
+
+  @include max-w (768px) {
+    margin: 0 -15px;
+  }
+
+
     &__bg {
         height: 730px;
         background-image: url('../../images/contact-img1.png');
@@ -155,11 +165,6 @@
     background-color: $body-bg;
     max-width: 514px;
     width: 100%;
-
-    @include max-w (542px) {
-      padding-right: 0;
-      padding-left: 0;
-    }
 }
 
 .form-inner-block {

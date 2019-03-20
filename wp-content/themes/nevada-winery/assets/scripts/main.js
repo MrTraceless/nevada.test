@@ -54,8 +54,22 @@ $('.menu').on('click', function (a) {
 //Error Subscribe
 
     $(".wpcf7").on('wpcf7:invalid', function() {
-      $('.container__outer').css('border-color', 'red');
+      $('.container__outer').css('border-color', '#ff1818');
   });
+
+  $(".wpcf7").on('wpcf7:mailsent', function() {
+    $('.container__outer').css('border-color', '#398f14');
+});
+
+//Focus Subscribe
+$('.form__input').on('focus', function () {
+  $(this).parents('.container__outer').css('border-color', '#781241');
+});
+
+
+$('.form__input').on('blur', function () {
+  $(this).parents('.container__outer').css('border-color', 'inherit');
+});
 
 })(jQuery);
 
