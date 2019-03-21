@@ -53,7 +53,6 @@ if( have_rows('media_post_link_block') ):
 
 
     while ( have_rows('media_post_link_block') ) : the_row(); ?>
-
         <a href="<?php the_sub_field('media_post_link'); ?>" class="button publications-container__btn">
 			<?php  the_sub_field('media_post_link_text'); ?><span class="button__arrow"><i class="fas fa-chevron-right"></i></span>
 		</a>

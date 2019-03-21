@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>">
     <div class="event">
         <div class="event-block1">
             <div class="event-block1__item">

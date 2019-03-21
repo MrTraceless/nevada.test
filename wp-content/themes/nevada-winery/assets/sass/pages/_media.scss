@@ -65,7 +65,9 @@
         &__btn {
             border: none;
             margin-top: 30px;
-            align-self: flex-end;
+            float: right;
+            max-height: 20px;
+            justify-content: flex-end;
 
             @include max-w (769px) {
                 margin-top: 10px;

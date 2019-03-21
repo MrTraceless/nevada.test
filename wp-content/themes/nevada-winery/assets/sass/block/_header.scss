@@ -142,7 +142,7 @@
 }
 .menu-top-click {
   backface-visibility: hidden;
-  top: 15px;
+  top: 6px;
   transform: rotate(50deg);
   transition: 0.55s 0.5s;
 }
@@ -151,7 +151,7 @@
 }
 .menu-bottom-click {
   backface-visibility: hidden;
-  top: 15px;
+  top: 6px;
   transform: rotate(-410deg);
   transition: 0.55s 0.5s;
 }
@@ -159,25 +159,9 @@
 //Burger navigation
 .menu-right {
   transition: 1s;
-  right: 12%;
+  right: 16%;
 
-  @include max-w (992px) {
-    right: 15%;
-  }
-
-  @include max-w (768px) {
-    right: 20%;
-  }
-
-  @include max-w (600px) {
-    right: 25%;
-  }
-
-  @include max-w (475px) {
-    right: 30%;
-  }
-
-  @include max-w (385px) {
-    right: 37%;
+  @include max-w (415px) {
+  right: 15.5%;
   }
 }

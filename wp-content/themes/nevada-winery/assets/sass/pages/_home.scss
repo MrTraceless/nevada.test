@@ -167,12 +167,14 @@
       background-size: cover;
       background-position: center;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
 
       @include max-w (768px) {
         margin: 0 -15px;
       }
+
 
       &-container {
           margin-left: auto;

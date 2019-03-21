@@ -30,9 +30,10 @@
                 height: 1px;
                 left: 0;
                 right: 0;
-                background: $text-color2;
+                // background: $text-color2;
+                border-bottom: 1px solid $text-color2;
                 margin: auto;
-                top: 3px;
+                top: 4px;
 
                 @include max-w (768px) {
 
@@ -48,8 +49,9 @@
                 height: 1px;
                 left: 0;
                 right: 0;
-                background: $text-color2;
-                bottom: 3px;
+                // background: $text-color2;
+                border-top: 1px solid $text-color2;
+                bottom: 4px;
 
                 @include max-w (768px) {
 

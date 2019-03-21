@@ -4,6 +4,7 @@
 .events-container {
 width: 100%;
 display: flex;
+flex-direction: row;
 }
 
 .event-column {
@@ -14,6 +15,7 @@ display: flex;
 }
 
 .event {
+    width: 100%;
     border-top: 1px solid $text-color2;
     display: flex;
     padding-top: 30px;
@@ -62,6 +64,7 @@ display: flex;
         width: 100%;
 
         &__text {
+            width: 100%;
             @include fluid-font (16px, 20px, 320px, 2560px) ;
 
             @include max-w (992px) {
@@ -78,14 +81,23 @@ display: flex;
             @include fluid-font (14px, 16px, 320px, 2560px) ;
 
             @include max-w (992px) {
+
                 text-align: center;
-                max-width: 190px;
                 width: 100%;
                 position: absolute;
                 top: 10%;
                 left: 90px;
                 right: auto;
                 bottom: auto;
+            }
+
+            @include max-w (768px) {
+                max-width: 300px;
+            }
+
+            @include max-w (468px) {
+                max-width: 200px;   
+                margin-top: -17.5px;
             }
         }
 
@@ -102,13 +114,12 @@ display: flex;
 
     &__link {
         border: none;
-        text-align: right;
         padding-top: 20px;
 
     }
     &__calendar {
         padding-top: 20px;
-        color: $text-color;
+        color: $text-color3;
         font-size: 15px;
         font-family: $font-family;
         background-color: transparent;
@@ -119,6 +130,10 @@ display: flex;
 
         @include max-w (992px) {
             display: inline-block;
+        }
+
+        &:hover {
+          color: $text-color
         }
 
         &-icon {
@@ -153,6 +168,7 @@ display: flex;
 }
 
 .outer-container {
+    width: 100%;
     padding-right: 67px;
 
     @include max-w (992px) {
