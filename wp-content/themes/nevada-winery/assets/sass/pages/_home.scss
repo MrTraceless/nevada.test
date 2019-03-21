@@ -181,6 +181,16 @@
           margin-right: auto;
           padding: 10px;
           background-color: $body-bg;
+          
+          @include max-w (418px) {
+            padding-left: 25px;
+            padding-right: 25px;
+          }
+
+          @include max-w (380px) {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
       }
 
       &-block {
@@ -283,6 +293,10 @@
     border: none;
     color: $successful;
     top: 60px;
+  }
+
+  .button {
+    width: 33%;
   }
 }
 

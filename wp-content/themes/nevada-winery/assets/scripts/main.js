@@ -71,6 +71,38 @@ $('.form__input').on('blur', function () {
   $(this).parents('.container__outer').css('border-color', 'inherit');
 });
 
+
+//Label Input Contact Form
+//Focus
+$('.form-input').on('focus', function () {
+  $(this).parent().parent().find('.label__text').addClass('label-animation');
+});
+
+//blur
+$('.form-input').on('blur', function () {
+
+  if ($('.form-input').val() === "") {
+    $(this).parent().parent().find('.label__text').removeClass('label-animation');
+  } else {
+    $(this).parent().parent().find('.label__text').addClass('label-animation');
+  }
+})
+
+//TExtarea
+$('.form-textarea').on('focus', function () {
+  $(this).parent().parent().find('.label__text').addClass('label-animation');
+});
+
+//blur
+$('.form-textarea').on('blur', function () {
+
+  if ($('.form-textarea').val() === "") {
+    $(this).parent().parent().find('.label__text').removeClass('label-animation');
+  } else {
+    $(this).parent().parent().find('.label__text').addClass('label-animation');
+  }
+})
+
 })(jQuery);
 
 

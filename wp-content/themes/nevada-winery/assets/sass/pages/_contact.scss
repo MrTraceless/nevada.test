@@ -215,7 +215,7 @@
       z-index: 20;
       top: 45px;
       font-weight: 400;
-      font-size: 18px;
+      @include fluid-font (12px, 18px, 320px, 2560px) ;
     }
     
     
@@ -256,7 +256,7 @@
     height: 53px;
     margin-top: 0;
     margin-bottom: 32px;
-    color: $text-color4;
+    color: $text-color;
     font-family: $font-family--garamond;
     @include fluid-font (14px, 20px, 320px, 2560px) ;
 
@@ -269,17 +269,30 @@
         border-bottom: 1px solid $text-color;
         transition: 0.5s;
     }
-
-    &:focus::placeholder {
-        font-size: 13px;
-        transform: translateY(-20px);
-        transition: 0.5s;
-    }
-
   }
 
+.input-container {
+    position: relative;
+  }
+
+.label__text {
+  font-family: $font-family--garamond;
+  color: $text-color4 ;
+  pointer-events: none;
+  top: 20px;
+  left: 10px;
+  position: absolute;
+  font-size: 18px;
+}
+
+.label-animation {
+  top: -14px;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
 .form-textarea {
-    color: $text-color4;
+    color: $text-color;
     border: none;
     border-bottom: 1px solid $border-input;
     resize: none;
@@ -296,12 +309,6 @@
 
     &:focus {
         border-bottom: 1px solid $text-color;
-        transition: 0.5s;
-    }
-
-    &:focus::placeholder {
-        font-size: 13px;
-        transform: translateY(-20px);
         transition: 0.5s;
     }
 }
