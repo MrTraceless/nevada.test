@@ -160,13 +160,19 @@
 .menu-right {
   transition: 1s;
   padding-left: 0;
-  padding-right: 150px;
+  padding-right: 81px;
 
   @include max-w (415px) {
   right: 15.5%;
+  padding-right: 103px;
   }
 
   @include max-w (368px) {
     padding-left: 10px;
+    right: 18%;
+  }
+
+  @include max-w (320px) {
+    padding-right: 55px;
   }
 }

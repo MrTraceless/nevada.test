@@ -28,12 +28,13 @@
         position: absolute;
         display: block;
         content: '';
-        top: 3px;
+        top: 4px;
         bottom: auto;
         left: 0;
         right: 0;
         height: 1px;
-        background: $text-color2;
+        // background: $text-color2;
+        border-bottom: 1px solid $text-color2;
       }
     }
   }
