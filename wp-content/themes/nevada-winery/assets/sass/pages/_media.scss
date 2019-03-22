@@ -58,8 +58,9 @@
             height: 1px;
             left: 0;
             right: 0;
-            background: $text-color2;
-            top: 3px;
+            // background: $text-color2;
+            border-bottom: 1px solid $text-color2;
+            top: 4px;
         }
     
         &__btn {

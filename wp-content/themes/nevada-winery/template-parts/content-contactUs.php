@@ -32,9 +32,12 @@ if( have_rows('contact_repeater', 'options') ):
 
  	// loop through the rows of data
     while ( have_rows('contact_repeater', 'options') ) : the_row(); ?>
+
 <div class="contactUs-block">
+
         <h2 class="contactUs-block__title"><?php the_sub_field('contact_name', 'options'); ?></h2>
-        <p class="contactUs-block__text"><?php the_sub_field('contact_link', 'options'); ?></p>
+        <a href="mailto:<?php the_sub_field('contact_link', 'options'); ?>"  class="contactUs-block__text"><?php the_sub_field('contact_link', 'options'); ?></a>
+        
 </div>
     <?php endwhile;
 

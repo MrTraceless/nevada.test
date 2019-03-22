@@ -124,6 +124,14 @@
                 color: $links-color2;
             }
         }
+
+        a.contactUs-block__text {
+            padding-top: 15px;
+
+            &:hover {
+                color: $text-color;
+            }
+        }
     }
 
     &-social {

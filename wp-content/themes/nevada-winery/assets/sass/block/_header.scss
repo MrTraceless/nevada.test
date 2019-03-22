@@ -159,9 +159,14 @@
 //Burger navigation
 .menu-right {
   transition: 1s;
-  right: 16%;
+  padding-left: 0;
+  padding-right: 150px;
 
   @include max-w (415px) {
   right: 15.5%;
+  }
+
+  @include max-w (368px) {
+    padding-left: 10px;
   }
 }
